@@ -3,6 +3,7 @@
    <title>Praj's Hideout</title>
    <link rel="stylesheet" href="index.css">
    <link rel="icon" type="image/png" href="favicon.png">
+   <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="custom-cursor"></div>
@@ -15,24 +16,48 @@
              <a href="projects.html">My Projects</a>
         </div>
     </nav>
+ 
+    <div class="index_main_cnt">
+        <h1>Welcome to Praj's Hideout!</h1>
+        <p>
+          Hey there! I’m Prajwal Uppalapati and this is my personal website.
+           Inside my hideout, you’ll find my projects, experiments, and creative builds.
+           Explore, discover new ideas, and get inspired by the world I’m creating here. 
+          </p>
+    </div>
 
-    <script>
+<script>
+
 const cursor = document.querySelector('.custom-cursor');
 
 document.addEventListener('mousemove', e => {
+
   cursor.style.left = e.clientX + 'px';
   cursor.style.top = e.clientY + 'px';
+
 });
 
+
+/* Cursor hover effect */
 document.querySelectorAll('a, button').forEach(el => {
   el.addEventListener('mouseenter', () => {
-    cursor.style.transform = 'translate(-50%, -50%) scale(1.3)';
+    cursor.classList.add('hover');
   });
 
   el.addEventListener('mouseleave', () => {
-    cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+    cursor.classList.remove('hover');
   });
 });
+
+/* Cursor click effect */
+document.addEventListener('mousedown', () => {
+  cursor.classList.add('click');
+});
+
+document.addEventListener('mouseup', () => {
+  cursor.classList.remove('click');
+});
+
 </script>
 
 </body>
