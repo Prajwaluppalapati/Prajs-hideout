@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+   <title>Praj's Hideout</title>
+   <link rel="stylesheet" href="index.css">
+   <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <nav class="main_nav">
+        <div class="main_nav_left">
+            <img class="mainnav_profile_pic" src="favicon.png">
+        </div>
+        <div class="main_nav_right">
+              <a href="index.html">Home</a>
+             <a href="projects.html">My Projects</a>
+        </div>
+    </nav>
+
+    <script>
+const cursor = document.querySelector('.custom-cursor');
+
+document.addEventListener('mousemove', e => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+});
+
+document.querySelectorAll('a, button').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursor.style.transform = 'translate(-50%, -50%) scale(1.3)';
+  });
+
+  el.addEventListener('mouseleave', () => {
+    cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+  });
+});
+</script>
+
+</body>
+</html>
