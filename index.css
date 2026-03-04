@@ -81,19 +81,25 @@ body {
 
 /* page starter */
 .index_main_cnt{
-    width: 90%;
-    height: 76.7vh;
-    padding: 5%;
+    width: 100%;
+    height: 100vh;
     color: white;
     background: linear-gradient(135deg, #2a1e27 0%, #331b24 30%, #1b2633 60%, #15281e 100%);
+    display: flex;
+    flex-direction: row;
+}
+
+.index_main_left_cnt{
+    width: 60%;
+    padding: 5%;
 }
 
 .index_main_cnt h1{
     font-family: "Grand Hotel";
-    color: rgb(255, 255, 255);
+    color: rgba(140, 174, 255, 0.811);
     font-size: 85px;
     margin-top: 30px;
-     text-shadow: 10px 6px 4px rgba(178, 178, 178, 0.158);
+     text-shadow: 10px 6px 4px rgba(255, 255, 255, 0.03);
 }
 
 .index_main_cnt p{
@@ -103,4 +109,72 @@ body {
     margin-top: -30px;
 }
 
+.index_main_right_cnt{
+    width: 40%;
+    display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100vh;
+}
 
+.scroll-wrapper {
+  height: 310px;
+  width: 85%;
+  overflow: hidden;
+}
+
+.scroll-text {
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 15s infinite;
+  gap: 10px;
+}
+
+.scroll-text div {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.502);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgba(255, 255, 255, 0.055);
+  transition: background 0.3s ease;
+}
+
+.scroll-text div:hover{
+  background: rgba(255, 255, 255, 0.16);
+}
+
+@keyframes slideUp {
+  0%, 15% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-310px);
+  }
+  20%, 35% {
+    transform: translateY(-310px);
+  }
+  40% {
+    transform: translateY(-620px);
+  }
+  40%, 55% {
+    transform: translateY(-620px);
+  }
+  60% {
+    transform: translateY(-930px);
+  }
+  60%, 75% {
+    transform: translateY(-930px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  80%, 100% {
+    transform: translateY(0);
+  }
+}

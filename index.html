@@ -21,12 +21,24 @@
     </nav>
  
     <div class="index_main_cnt">
-        <h1>Welcome to <br> Praj's Hideout!</h1>
+      <div class="index_main_left_cnt">
+         <h1>Welcome to <br> Praj's Hideout!</h1>
         <p>
           Hey there! I’m Prajwal Uppalapati and this is my personal website.
            Inside my hideout, you’ll find my projects, experiments, and creative builds.
            Explore, discover new ideas, and get inspired by the world I’m creating here. 
           </p>
+      </div>
+      <div class="index_main_right_cnt">
+          <div class="scroll-wrapper">
+      <div class="scroll-text">
+        <div>Web Developer</div>
+        <div>Content creator</div>
+        <div>Hardware builder</div>
+        <div>Hack Clubber</div>
+      </div>
+    </div>
+      </div>
     </div>
 
 <script>
@@ -42,7 +54,7 @@ document.addEventListener('mousemove', e => {
 
 
 /* Cursor hover effect */
-document.querySelectorAll('a, button').forEach(el => {
+document.querySelectorAll('a, button, .scroll-text').forEach(el => {
   el.addEventListener('mouseenter', () => {
     cursor.classList.add('hover');
   });
