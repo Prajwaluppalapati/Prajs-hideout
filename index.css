@@ -96,10 +96,21 @@ body {
 
 .index_main_cnt h1{
     font-family: "Grand Hotel";
-    color: rgba(140, 174, 255, 0.811);
+    color: rgba(140, 174, 255, 0.963);
     font-size: 85px;
     margin-top: 30px;
      text-shadow: 10px 6px 4px rgba(255, 255, 255, 0.03);
+     animation: float 3s ease-in-out infinite;
+     margin-top: 8%;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .index_main_cnt p{
@@ -110,8 +121,8 @@ body {
 }
 
 .index_main_right_cnt{
-    width: 40%;
-    display: flex;
+  width: 40%;
+  display: flex;
   justify-content: left;
   align-items: center;
   height: 100vh;
@@ -133,6 +144,7 @@ body {
 .scroll-text div {
   height: 300px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 22px;
@@ -143,10 +155,23 @@ body {
   padding-right: 10px;
   background: rgba(255, 255, 255, 0.055);
   transition: background 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .scroll-text div:hover{
   background: rgba(255, 255, 255, 0.16);
+}
+
+.scroll-text i{
+  font-size: 100px;
+}
+
+.scroll-text img{
+  width: 200px;
+}
+
+.scroll-text h2{
+  margin-top: 10px;
 }
 
 @keyframes slideUp {
