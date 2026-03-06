@@ -5,6 +5,7 @@ cursor: none;
 body{
 padding: 0;
 margin: 0;
+font-family: "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 /* Hide default cursor */
@@ -23,7 +24,7 @@ body {
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: transform 0.2s ease, background 0.1s ease;
-  z-index: 9999;
+  z-index: 10000;
 }
 
 .custom-cursor.hover {
@@ -95,13 +96,14 @@ body {
 }
 
 .index_main_cnt h1{
-    font-family: "Grand Hotel";
+    font-family: 'Jersey 20';
     color: rgba(140, 174, 255, 0.963);
     font-size: 85px;
     margin-top: 30px;
      text-shadow: 10px 6px 4px rgba(255, 255, 255, 0.03);
      animation: float 3s ease-in-out infinite;
      margin-top: 8%;
+     text-shadow: 0 0 26px rgba(140, 174, 255, 0.648), 0 0 50px rgba(140, 174, 255, 0.575);
 }
 
 @keyframes float {
@@ -114,10 +116,8 @@ body {
 }
 
 .index_main_cnt p{
-    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     max-width: 700px;
-    margin-top: -30px;
 }
 
 .index_main_right_cnt{
@@ -153,13 +153,31 @@ body {
   border-radius: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  background: rgba(255, 255, 255, 0.055);
-  transition: background 0.3s ease;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(135deg,
+    rgba(255,255,255,0.208),
+    rgba(255,255,255,0.002));
 }
 
-.scroll-text div:hover{
-  background: rgba(255, 255, 255, 0.16);
+.scroll-text div::before{
+   content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+    rgba(255,255,255,0.002),
+    rgba(255,255,255,0.208));
+
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 10px;
+}
+
+.scroll-text div:hover:before{
+ opacity: 1;
 }
 
 .scroll-text i{
@@ -202,4 +220,36 @@ body {
   80%, 100% {
     transform: translateY(0);
   }
+}
+
+/* about section */
+.about_cnt{
+  padding: 5%;
+  background: #071522;
+  color: white;
+}
+
+.about_1{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgba(255, 255, 255, 0.578);
+  border-radius: 20px;
+  padding: 1.5%;
+  padding-right: 5%;
+  padding-left: 3%;  
+  gap: 5%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.119), rgba(255, 255, 255, 0.002));
+}
+
+.about_cnt p{
+  font-size: 20px;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #e9fbff;
+  font-weight: 500;
+}
+
+.about_1 img{
+  width: 250px;
 }
