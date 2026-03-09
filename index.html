@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Jersey+10&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/e7dfe44f3e.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <div class="custom-cursor"></div>
@@ -17,8 +18,9 @@
         </div>
         <div class="main_nav_right">
               <a href="index.html">Home</a>
-             <a href="projects.html">My Projects</a>
+             <a href="#projects">My Projects</a>
              <a href="#about">About</a>
+             <a href="#contacts">Contact</a>
         </div>
     </nav>
  
@@ -57,7 +59,7 @@
     <section id="about">
       <div class="about_cnt">
          <h1>About Me</h1>
-        <div class="about_1">
+        <div class="about_1" id="about_0">
         <img src="about-1.png">
         <p>
          Hi, I'm Prajwal (Praj), a 15‑year‑old tech enthusiast from India. I love coding,
@@ -69,13 +71,208 @@
          I learnt Python and JS a little bit.
         </p>
         </div>
+        <div class="about_1" id="about_2" style="margin-top: 20px;">
+        <p>
+         I started my YouTube channel, <a href="https://www.youtube.com/@Praj_tech">Praj Tech.</a> 
+         On the channel, I create videos related to different areas of tech,
+         exploring useful ideas, tools, and concepts that people can learn from.
+         My goal is to make content that is interesting, informative, and easy for viewers to understand.
+         Working on Praj Tech has also helped me become more creative and consistent,
+         as I keep trying new ideas and improving my videos over time while growing my audience.
+        </p>
+        <img src="about-2.png" style="filter: hue-rotate(130deg);">
+        </div>
+
+ <div class="what_we_do">
+        <article class="what_card">
+          <h4 class="card_title">YouTube Creator</h4>
+          <p class="card_text">I run youtube channels related to tech and coding<br><br> <a class="text_links" href="https://www.youtube.com/@Praj_tech">Praj tech</a> - one of my latest created youtube channel related to tech and android and windows tutorials (how to).</p>
+        </article>
+
+        <article class="what_card">
+          <h4 class="card_title">Robotics</h4>
+          <p class="card_text">I joined Atal tinkering lab in my school when I was in 6th std. ATL lab is all about robotics and building tech stuff. I worked with Arduino, sensors and many hardware stuff there with my friends. My first project in ATL was an automatic breaking system which I and my friends made for ATL marathon.</p>
+        </article>
+
+        <article class="what_card">
+          <h4 class="card_title">App & Web</h4>
+          <p class="card_text">I have build a lot of websites, games and apps, as coding is my main hobby. In those, some were for practice, some were for competitions and some just for fun. You can view all my projects in github: <a class="text_links" href="https://github.com/Prajwaluppalapati">https://github.com/Prajwaluppalapati</a></p>
+        </article>
+
+          <article class="what_card">
+          <h4 class="card_title">Competitions</h4>
+          <p class="card_text">I participated in many coding and tech competitions and won some cool stuff like a portable monitor and a gaming chair.</p>
+        </article>
+
+        <article class="what_card">
+          <h4 class="card_title">Hack club</h4>
+          <p class="card_text">I am a part of <a class="text_links" href="https://hackclub.com">hack club</a> since sept 2025, which is a non profit organization for teen coders like me.</p>
+        </article>
+      </div>
+
     </div>
-    </section>
+  </section>
+  
+  <section id="projects">
+    <div class="projects_cnt">
+        <h1>Some of my Projects</h1>
+        <div class="projects_row">
+          <div class="projects_card">
+            <img src="project-india.png">
+            <div class="projects_card_bottom">
+                  <h3>India</h3>
+                  <p>This is a small project which tells about India. It let's explore India, know about it's Geography, States and languages.</p>
+                  <br>
+                  <a href="https://prajwaluppalapati.github.io/India">View Project</a>
+            </div>
+          </div>
+
+           <div class="projects_card">
+            <img src="autopilot-one.png">
+            <div class="projects_card_bottom">
+                  <h3>Autopilot.one</h3>
+                  <p>This is a website where you can make notes and store them on database, just created it for testing purpose.</p>
+                  <br>
+                  <a href="https://notes-databasecollection.web.app">View Project</a>
+            </div>
+          </div>
+
+          <div class="projects_card">
+            <img src="dalgona-game.png">
+            <div class="projects_card_bottom">
+                  <h3>Dalgona game 2D</h3>
+                  <p>If you have seen squidgame, you must know the Dalgona game, and I made a 2D version of that game.</p>
+                  <br>
+                  <a href="https://prajwaluppalapati.github.io/Dalgona-game-2D">Play Game</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+ 
+  <section id="notes">
+  <h1>Leave a Note</h1>
+
+  <div class="note_input">
+    <input id="username" placeholder="Your name">
+    <textarea id="noteText" placeholder="Write a note..."></textarea>
+    <button id="postNote">Post Note</button>
+  </div>
+
+  <div id="notesContainer"></div>
+</section>
+
+<section id="contacts">
+   <div class="footer">
+    <div class="footer_left">
+          <p>Prajwal Uppalapati - Web developer</p>
+          <p>Made using HTML, CSS and JS by me :D</p>
+      </div>
+      <div class="footer_right">
+          <p>Email - Prajwal.uppalapati@gmail.com</p>
+          <p>Github - <a href="https://github.com/Prajwaluppalapati">Prajwaluppalapati</a></p>
+          <p>© 2026 Prajwal</p>
+      </div>
+       </div>
+</section>
 
 <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2026/03/05/08/20260305082244-VNSGWALP.js" defer></script>
-    
 
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-analytics.js";
+
+import { 
+  getFirestore, 
+  collection, 
+  addDoc, 
+  query, 
+  orderBy, 
+  onSnapshot 
+} from "https://www.gstatic.com/firebasejs/12.10.0/firebase-firestore.js";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyC6lO6wBYY5TgI8XzMMfXaa82-mJhDj-qE",
+  authDomain: "prajs-hideout.firebaseapp.com",
+  projectId: "prajs-hideout",
+  storageBucket: "prajs-hideout.firebasestorage.app",
+  messagingSenderId: "2645600281",
+  appId: "1:2645600281:web:c092eed8a3e12360696288",
+  measurementId: "G-J4YEQ411BM"
+};
+
+
+// initialize firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
+// initialize firestore
+const db = getFirestore(app);
+
+
+// get HTML elements
+const usernameInput = document.getElementById("username");
+const noteInput = document.getElementById("noteText");
+const postBtn = document.getElementById("postNote");
+const notesContainer = document.getElementById("notesContainer");
+
+
+// reference to firestore collection
+const notesRef = collection(db, "notes");
+
+
+// post note
+postBtn.addEventListener("click", async () => {
+
+  const username = usernameInput.value.trim();
+  const text = noteInput.value.trim();
+
+  if (!username || !text) {
+    alert("Please fill both fields");
+    return;
+  }
+
+  await addDoc(notesRef,{
+    username: username,
+    text: text,
+    time: Date.now()
+  });
+
+  noteInput.value = "";
+
+});
+
+
+// load notes live
+const q = query(notesRef, orderBy("time","desc"));
+
+onSnapshot(q, (snapshot) => {
+
+  notesContainer.innerHTML = "";
+
+  snapshot.forEach((doc) => {
+
+    const data = doc.data();
+
+    const card = document.createElement("div");
+    card.className = "note_card";
+
+    card.innerHTML = `
+      <h4>${data.username}</h4>
+      <p>${data.text}</p>
+    `;
+
+    notesContainer.appendChild(card);
+
+  });
+
+});
+
+</script>
 <script>
 
 const cursor = document.querySelector('.custom-cursor');

@@ -227,6 +227,7 @@ body {
   padding: 5%;
   background: #071522;
   color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.137);
 }
 
 .about_1{
@@ -241,7 +242,7 @@ body {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.119), rgba(255, 255, 255, 0.002));
 }
 
-.about_cnt p{
+.about_1 p{
   font-size: 20px;
   height: fit-content;
   margin-top: auto;
@@ -252,4 +253,322 @@ body {
 
 .about_1 img{
   width: 250px;
+}
+
+.about_1 a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(77, 95, 255);
+}
+
+.about_1 a:hover{
+  text-decoration: wavy underline;
+}
+
+.what_we_do {
+    display: flex;
+    gap: 16px;
+    margin-top: 18px;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;   
+}
+
+.what_card {
+    flex: 1 1 30%;
+    min-width: 200px;
+    background: rgba(0, 0, 27, 0.482);
+    border: 1px solid rgba(255, 255, 255, 0.094);
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.559);
+}
+
+.what_card:hover {
+    transform: translateY(-6px);
+    transition: transform 220ms ease;
+}
+
+.card_title {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.card_text {
+    margin: 0;
+    font-size: 14px;
+    color: #688497;
+}
+
+.what_card a{
+    text-decoration: none;
+    color: rgb(77, 95, 255);
+    font-weight: 600;
+}
+
+.what_card a:hover{
+   text-decoration: wavy underline;
+}
+
+/* projects section */
+.projects_cnt{
+  padding: 5%;
+  background: #071522;
+  color: white;
+  width: 90%;
+}
+
+.projects_row{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.projects_card{
+  background: rgba(255, 255, 255, 0.194);
+  border: 1px solid rgba(255, 255, 255, 0.434);
+  height: 400px;
+  width: 350px;
+  border-radius: 20px;
+}
+
+.projects_card img{
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.projects_card h3{
+  font-size: 25px;
+}
+
+.projects_card p{
+  font-size: 18px;
+}
+
+.projects_card_bottom{
+  padding: 5%;
+  margin-top: -5%;
+}
+
+.projects_card_bottom a{
+  color: white;
+  text-decoration: none;
+  background: rgb(127, 125, 255);
+  padding-left: 35%;
+  padding-right: 35%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.projects_card_bottom a:hover{
+  background: rgb(77, 95, 255);
+}
+
+/* leave a note section */
+#notes{
+  padding: 40px;
+  text-align:center;
+  background: #071522;
+  color: white;
+}
+
+#notes h1{
+  font-size: 36px;
+  background: linear-gradient(90deg, rgb(64, 64, 255), rgb(157, 157, 255), rgb(64, 64, 255));
+  border: 1px solid white;
+  box-shadow: 0px 0px 40px rgb(51, 78, 255);
+  padding-bottom: 1%;
+  padding-top: 0.5%;
+  border-radius: 20px;
+}
+
+.note_input{
+  display:flex;
+  flex-direction:column;
+  width: 80%;
+  margin:auto;
+  gap: 10px;
+  background: rgb(0, 5, 28);
+  padding: 2%;
+  margin-top: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.301);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.559);
+  border-radius: 10px;
+}
+
+.note_input button{
+  font-size: 16px;
+  padding: 1%;
+  background: rgb(116, 116, 255);
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.note_input button:hover{
+  background: rgb(72, 72, 255);
+}
+
+.note_input input,
+.note_input textarea{
+  padding:10px;
+  border-radius:6px;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.393);
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  transition: border 0.2s ease;
+}
+
+.note_input input:focus, .note_input textarea:focus{
+  outline: none;
+  border: 1px solid rgb(77, 95, 255);
+}
+
+#notesContainer{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  justify-content:center;
+  margin-top:30px;
+}
+
+.note_card{
+  background: rgb(0, 5, 28);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.559);
+  color:white;
+  width: 220px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.347);
+}
+
+.note_card h4{
+  margin: 0;
+  color: white;
+  background: rgb(64, 64, 255);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 5px 0px;
+}
+
+.note_card p{
+  margin-top: 8px;
+}
+
+.footer{
+  background: #041016;
+  color: #cfe8f8;
+  margin-top: -15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  font-size: 12px;
+}
+
+.footer_right{
+  width: 50%;
+  text-align: right;
+  padding-right: 8%;
+}
+
+.footer_left{
+  width: 50%;
+  padding-left: 1%;
+  font-size: 15px;
+}
+
+@media (max-width: 450px){
+  .custom-cursor{
+    display: none;
+  } 
+
+  .custom-cursor.click{
+    display: none;
+  }
+
+  .custom-cursor .hover{
+    display: none;
+  }
+  
+  .index_main_cnt{
+     display: flex;
+     flex-direction: column;
+   }
+
+   .main_nav_left{
+     width: 20%;
+   }
+
+   .main_nav_right{
+      width: 80%;
+      gap: 12px;
+      justify-content: left;
+   }
+
+   .main_nav_right a{
+      font-size: 15px;
+      margin-top: auto;
+      margin-bottom: auto;
+   }
+
+   .index_main_left_cnt{
+     width: 90%;
+     padding: 5%;
+   }
+   
+   .index_main_cnt h1{
+     font-size: 85px;
+   }
+
+   .index_main_cnt p{
+     font-size: 25px;
+     margin-top: -10px;
+     width: 380px;
+   }
+
+   .index_main_right_cnt{
+    width: 100%;
+    margin-top: 0;
+    height: fit-content;
+    justify-content: center;
+    padding: 0;
+   }
+
+   #about_0{
+    flex-direction: column;
+   }
+
+   #about_2{
+    flex-direction: column-reverse;
+   }
+
+   .about_1{
+    justify-content: center;
+    text-align: center;
+   }
+
+   .about_1 img{
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   .about_1 p{
+    margin-top: 10px;
+   }
 }
