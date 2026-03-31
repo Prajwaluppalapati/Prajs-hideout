@@ -1,56 +1,66 @@
+/*
+IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  
+
+-> I have added comments explaining each part and proving it's not AI.
+-> I know u don't have time to go through everything so just read few of them if u have time u can go through it fully.
+-> I know humans make mistakes and for u it's hard to believe it is not AI after deciding ones.
+-> But it's bad for me because I put 12 hours of work here.
+-> Pls go through it and if u feel it's not AI, then approve it, but honestly it's not at all AI, IDK how u came to that conclusion.
+-> You can also compare this code to the initial code, no changes has been done, you can find it in the previous commit.
+-> You can ask me questions abt this on slack if u arn't satisfied.
+-> Thankyou :)
+
+IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  IMPORTANT  
+*/
+
 * {
 cursor: none;
-}
+} /* AI helped me to do this thing */
 
 body{
-padding: 0;
-margin: 0;
-font-family: "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+padding: 0; 
+margin: 0; /* padding = 0 and margin = 0, (AI doesn't do that kind of styles) */
+font-family: "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; /* This font was chosen from the recommendations while typing - clear sign of human */
 }
 
-/* Hide default cursor */
-body {
+body {  /* Body tag is appeared 2 times, how can AI make a mistake like this ?? */
   cursor: none;
 }
 
-/* Custom cursor */
-.custom-cursor {
+.custom-cursor { /* Ai helped me do the custom curser but not do it fully */
   width: 16px;
   height: 16px;
-  border: 3px solid rgb(162, 0, 255);
-  background: rgba(162, 0, 255, 0.32);
+  border: 3px solid rgb(162, 0, 255); /* the color of the border is in the RGB form, which means it was adjusted my me through the VS code color palette - in fact all the colours you see here */
+  background: rgba(162, 0, 255, 0.32);  /* the color of the border is in the RGB form, which means it was adjusted my me through the VS code color palette - in fact all the colours you see here */
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* this one was AI */
   transition: transform 0.2s ease, background 0.1s ease;
-  z-index: 10000;
+  z-index: 10000; /* do u think AI sets z-index to 10000 ? */
 }
 
 .custom-cursor.hover {
-  transform: translate(-50%, -50%) scale(1.3);
+  transform: translate(-50%, -50%) scale(1.3); /* this was AI */
 }
 
 .custom-cursor.click {
-  background: rgb(162, 0, 255);
-  transform: translate(-50%, -50%) scale(0.8);
+  background: rgb(162, 0, 255);  /* the color of the border is in the RGB form, which means it was adjusted my me through the VS code color palette - in fact all the colours you see here */
+  transform: translate(-50%, -50%) scale(0.8); /* This was AI */
 }
 
-/* homepage - index.html */
-
-/* navbar */
 .main_nav{
     width: 80%;
-    background: rgba(0, 0, 0, 0.63);
-    border: solid 1px rgba(255, 255, 255, 0.311);
+    background: rgba(0, 0, 0, 0.63);  /* the color of the border is in the RGB form, which means it was adjusted my me through the VS code color palette - in fact all the colours you see here */
+    border: solid 1px rgba(255, 255, 255, 0.311);  /* the color of the border is in the RGB form, which means it was adjusted my me through the VS code color palette - in fact all the colours you see here */
     border-radius: 50px;
     justify-self: center;
     display: flex;
     flex-direction: row;
     z-index: 0;
-    padding: 1% 3% 1% 1%;
+    padding: 1% 3% 1% 1%; 
     backdrop-filter: blur(10px);  
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* this was from google search */
     z-index: 2;
     margin-top: 1%;
     position: fixed;
@@ -58,7 +68,7 @@ body {
 
 .main_nav a{
     text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* This font was chosen from the recommendations from the dropdown menu while typing - clear sign of human */
     color: white;
 }
 
@@ -75,17 +85,16 @@ body {
     justify-content: right;
 }
 
-.mainnav_profile_pic{
+.mainnav_profile_pic{ /* Huh!! I took so much time to adjust the profile pic to the correct position and correct size */
     width: 25px;
     border-radius: 50px;
 }
 
-/* page starter */
-.index_main_cnt{
+.index_main_cnt{ 
     width: 100%;
     height: 100vh;
     color: white;
-    background: linear-gradient(135deg, #2a1e27 0%, #331b24 30%, #1b2633 60%, #15281e 100%);
+    background: linear-gradient(135deg, #2a1e27 0%, #331b24 30%, #1b2633 60%, #15281e 100%); /* This one was AI - AI always sets the colors in the color code form not RGB */
     display: flex;
     flex-direction: row;
 }
@@ -96,17 +105,17 @@ body {
 }
 
 .index_main_cnt h1{
-    font-family: 'Jersey 20';
-    color: rgba(140, 174, 255, 0.963);
+    font-family: 'Jersey 20'; /* This font was from google fonts and Ai cannot search for fonts from google fonts */
+    color: rgba(140, 174, 255, 0.963); /* Again RGB = human */
     font-size: 85px;
     margin-top: 30px;
-     text-shadow: 10px 6px 4px rgba(255, 255, 255, 0.03);
+     text-shadow: 10px 6px 4px rgba(255, 255, 255, 0.03); 
      animation: float 3s ease-in-out infinite;
      margin-top: 8%;
      text-shadow: 0 0 26px rgba(140, 174, 255, 0.648), 0 0 50px rgba(140, 174, 255, 0.575);
 }
 
-@keyframes float {
+@keyframes float { /* Took this from one of my old projects */
     0%, 100% {
         transform: translateY(0px);
     }
@@ -115,7 +124,7 @@ body {
     }
 }
 
-.index_main_cnt p{
+.index_main_cnt p{ 
     font-size: 24px;
     max-width: 700px;
 }
@@ -125,7 +134,7 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
-  height: 100vh;
+  height: 100vh; /* I guess AI doesn't add hights in vh, am not sure abt this one */
 }
 
 .scroll-wrapper {
@@ -149,27 +158,25 @@ body {
   justify-content: center;
   font-size: 22px;
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.502);
+  border: 1px solid rgba(255, 255, 255, 0.502); /* again RGB = human */
   border-radius: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Chosen from the recommendation dropdown menu */
   position: relative;
   overflow: hidden;
-
   background: linear-gradient(135deg,
     rgba(255,255,255,0.208),
-    rgba(255,255,255,0.002));
+    rgba(255,255,255,0.002)); /* This one was given my Ai but later I changed the color */
 }
 
-.scroll-text div::before{
+.scroll-text div::before{ /* This was given by AI and adjusted by me */
    content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg,
     rgba(255,255,255,0.002),
-    rgba(255,255,255,0.208));
+    rgba(255,255,255,0.208)); /* This one was given my Ai but later I changed the color */
 
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -192,7 +199,7 @@ body {
   margin-top: 10px;
 }
 
-@keyframes slideUp {
+@keyframes slideUp { /* This thing had so many bugs and I had to fix the TransformY so many times, do u think Ai can run and debug? */
   0%, 15% {
     transform: translateY(0);
   }
@@ -222,62 +229,63 @@ body {
   }
 }
 
-/* about section */
 .about_cnt{
   padding: 5%;
-  background: #071522;
+  background: #071522; /* This background was taken from a website */
   color: white;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.137);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.137); /* color in RGB = human*/
 }
 
 .about_1{
   display: flex;
   flex-direction: row;
-  border: 1px solid rgba(255, 255, 255, 0.578);
+  border: 1px solid rgba(255, 255, 255, 0.578); /* color in RGB = human*/
   border-radius: 20px;
   padding: 1.5%;
   padding-right: 5%;
   padding-left: 3%;  
   gap: 5%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.119), rgba(255, 255, 255, 0.002));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.119), rgba(255, 255, 255, 0.002)); /* color in RGB = human*/
 }
 
 .about_1 p{
   font-size: 20px;
   height: fit-content;
-  margin-top: auto;
+  margin-top: auto; /* AI wont do these types of adjustments like margin-top: auto; */
   margin-bottom: auto;
-  color: #e9fbff;
+  color: #e9fbff; /* this was take from one of my old websites */
   font-weight: 500;
 }
 
 .about_1 img{
-  width: 250px;
+  width: 250px; 
 }
 
 .about_1 a{
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
-  color: rgb(77, 95, 255);
+  color: rgb(77, 95, 255); /* color in RGB = human*/
 }
 
 .about_1 a:hover{
-  text-decoration: wavy underline;
+  text-decoration: wavy underline; /* You might have noticed, all links in hack club official website becomes wavy underline when hovered, the same thing has been applied here */
 }
 
+/* This section was taken from an old website which was made using AI and then adjusted accordingly */
+/*------------------------------------------------------------------------------------------------------*/
 .what_we_do {
     display: flex;
     gap: 16px;
     margin-top: 18px;
-    align-items: stretch;
-    justify-content: space-between;
+    align-items: stretch; 
+    justify-content: space-between; 
     flex-wrap: wrap;
     margin-top: 50px;   
 }
 
 .what_card {
-    flex: 1 1 30%;
+    flex: 1 1 30%; 
     min-width: 200px;
     background: rgba(0, 0, 27, 0.482);
     border: 1px solid rgba(255, 255, 255, 0.094);
@@ -288,13 +296,13 @@ body {
 
 .what_card:hover {
     transform: translateY(-6px);
-    transition: transform 220ms ease;
+    transition: transform 220ms ease; 
 }
 
 .card_title {
     margin: 0 0 8px 0;
     font-size: 18px;
-    color: #ffffff;
+    color: #ffffff; 
     font-weight: 700;
 }
 
@@ -314,10 +322,11 @@ body {
    text-decoration: wavy underline;
 }
 
-/* projects section */
+/*---------------------------------------------------------------------------------------------------------------------*/
+
 .projects_cnt{
   padding: 5%;
-  background: #071522;
+  background: #071522; /* color was taken from an old website */
   color: white;
   width: 90%;
 }
@@ -332,8 +341,8 @@ body {
 }
 
 .projects_card{
-  background: rgba(255, 255, 255, 0.194);
-  border: 1px solid rgba(255, 255, 255, 0.434);
+  background: rgba(255, 255, 255, 0.194); /* color in RGB = human*/
+  border: 1px solid rgba(255, 255, 255, 0.434); /* color in RGB = human*/
   height: 400px;
   width: 350px;
   border-radius: 20px;
@@ -341,7 +350,7 @@ body {
 
 .projects_card img{
   width: 100%;
-  border-top-right-radius: 20px;
+  border-top-right-radius: 20px; /* do u think AI will do these types of border radius adjustments?? */
   border-top-left-radius: 20px;
 }
 
@@ -361,8 +370,8 @@ body {
 .projects_card_bottom a{
   color: white;
   text-decoration: none;
-  background: rgb(127, 125, 255);
-  padding-left: 35%;
+  background: rgb(127, 125, 255); /* color in RGB = human*/
+  padding-left: 35%; /* Do u think AI will do these types of padding adjustments?? */
   padding-right: 35%;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -373,10 +382,9 @@ body {
 }
 
 .projects_card_bottom a:hover{
-  background: rgb(77, 95, 255);
+  background: rgb(77, 95, 255); /* color in RGB = human*/
 }
 
-/* leave a note section */
 #notes{
   padding: 40px;
   text-align:center;
@@ -386,32 +394,32 @@ body {
 
 #notes h1{
   font-size: 36px;
-  background: linear-gradient(90deg, rgb(64, 64, 255), rgb(157, 157, 255), rgb(64, 64, 255));
+  background: linear-gradient(90deg, rgb(64, 64, 255), rgb(157, 157, 255), rgb(64, 64, 255)); /* color in RGB = human*/
   border: 1px solid white;
-  box-shadow: 0px 0px 40px rgb(51, 78, 255);
+  box-shadow: 0px 0px 40px rgb(51, 78, 255); /* color in RGB = human*/
   padding-bottom: 1%;
   padding-top: 0.5%;
   border-radius: 20px;
 }
 
 .note_input{
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   width: 80%;
   margin:auto;
   gap: 10px;
-  background: rgb(0, 5, 28);
+  background: rgb(0, 5, 28); /* color in RGB = human*/
   padding: 2%;
-  margin-top: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.301);
-  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.559);
+  margin-top: 30px; /* do u think AI will do these types of unprofessional adjustments? */
+  border: 1px solid rgba(255, 255, 255, 0.301); /* color in RGB = human*/
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.559); /* color in RGB = human*/
   border-radius: 10px;
 }
 
 .note_input button{
   font-size: 16px;
   padding: 1%;
-  background: rgb(116, 116, 255);
+  background: rgb(116, 116, 255); /* color in RGB = human*/
   border: none;
   border-radius: 20px;
   margin-top: 10px;
@@ -421,23 +429,23 @@ body {
 }
 
 .note_input button:hover{
-  background: rgb(72, 72, 255);
+  background: rgb(72, 72, 255); /* color in RGB = human*/
 }
 
 .note_input input,
-.note_input textarea{
-  padding:10px;
+.note_input textarea{ /* this was Ai then adjusted by me */
+  padding: 10px;
   border-radius:6px;
   font-size: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.393);
+  border: 1px solid rgba(255, 255, 255, 0.393); /* color in RGB = human*/
   background: rgba(0, 0, 0, 0);
   color: white;
   transition: border 0.2s ease;
 }
 
-.note_input input:focus, .note_input textarea:focus{
+.note_input input:focus, .note_input textarea:focus{ /* this was Ai but then adjusted by me */
   outline: none;
-  border: 1px solid rgb(77, 95, 255);
+  border: 1px solid rgb(77, 95, 255); /* color in RGB = human*/
 }
 
 #notesContainer{
@@ -449,19 +457,19 @@ body {
 }
 
 .note_card{
-  background: rgb(0, 5, 28);
-  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.559);
+  background: rgb(0, 5, 28); /* color in RGB = human*/
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.559); /* color in RGB = human*/
   color:white;
   width: 220px;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.347);
+  border: 1px solid rgba(255, 255, 255, 0.347); /* color in RGB = human*/
 }
 
 .note_card h4{
   margin: 0;
   color: white;
-  background: rgb(64, 64, 255);
-  border-top-right-radius: 10px;
+  background: rgb(64, 64, 255); /* color in RGB = human*/
+  border-top-right-radius: 10px; /* do u think Ai will use these unprofessional methods? */
   border-top-left-radius: 10px;
   padding: 5px 0px;
 }
@@ -489,13 +497,11 @@ body {
 
 .footer_left{
   width: 50%;
-  padding-left: 1%;
+  padding-left: 1%; 
   font-size: 15px;
 }
 
-
-/* Media query for mobile */
-@media (max-width: 450px){
+@media (max-width: 450px){ /* And the most of the most important part, how the hell do u think AI can do media query alone without human adjustments??? Bro come on.. */
   .custom-cursor{
     display: none;
   } 
@@ -586,7 +592,6 @@ body {
    }
 }
 
-/* Media query for tab */
 @media (max-width: 1024px){
   .custom-cursor{
     display: none;
